@@ -1,0 +1,133 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    background-color: #EEE;
+}
+
+html:not([data-scroll='0']) {    
+    #header {
+        box-shadow: 0px 3px 20px rgba(0,0,0,0.2);
+    }
+}
+  
+
+#container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background: linear-gradient(0deg, #060522 30%, #061434); */
+    background: linear-gradient(#F6F6F6, #EEE)
+}
+
+#blurFilter {
+    backdrop-filter: blur(1px);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+}
+
+#main {
+    background: #FFF;
+    /* background: linear-gradient(hsla(0,6%,7%,0) 50%,rgba(0,0,0,.25) 0),linear-gradient(90deg,rgba(255,0,0,.06),rgba(0,255,0,.02),rgba(0,0,255,.06));
+    background-size: 100% 2px,3px 100%; */
+    filter: blur(0.5px);
+    border-radius: 40px;
+    width: auto;
+    height: 80%;
+    margin: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* color: rgb(125, 157, 223);; */
+    color: #DDD;
+    font-size: 20pt;
+    line-height: 1;
+    text-align: center;
+    /* border: solid 1px #CCC; */
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.2);
+}
+
+#landingText {
+    font-size: 56pt;
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 20%;
+    text-align: center;
+    color: #333;
+}
+
+.landingText {
+    color: #000!important;
+    border: solid 1px transparent;
+    transition: all 0.1s;
+}
+
+.landingText:hover {
+    color: #226ed1!important;
+    cursor: pointer;
+    border: solid 1px #023c88;
+}
+
+
+
+.bg-row {
+    line-height: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.scanlines:before {
+    background: linear-gradient(hsla(0,16%,17%,0) 50%,rgba(0,0,0,.05) 0),linear-gradient(90deg,rgba(255,0,0,.06),rgba(0,255,0,.02),rgba(0,0,255,.06));
+    background-size: 100% 2px,3px 100%;
+    bottom: 0;
+    content: " ";
+    display: block;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+
+
+.mainContainer {
+    margin: 80px;
+}
+
+
+#header {
+    position: fixed;
+    background-color: #F6F6F6;
+    width: 100%!important;
+    height: auto;
+    top: 0;
+    z-index: 10;
+}
+
+.headerBtnContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.headerBtn {
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 40px;
+    background-color: #111;
+    color: #FFF;
+    margin: 12px;
+}
+
+.headerBtn:last-of-type {
+    margin-left: auto;
+}
